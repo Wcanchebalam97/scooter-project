@@ -16,7 +16,8 @@ class ScooterApp {
   }
 
   //methods
-  registerUser(username, password, age){
+  registerUser(username, password, age) {
+    //Need a different syntax if we are searching for a username in the registeredUsers object
     if(this.registerUsers!==username && age>=18){
       this.registerUsers.username=User;
       console.log("User had been registered.");

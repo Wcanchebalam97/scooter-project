@@ -12,7 +12,9 @@ class Scooter{
   }
 
   //methods
-  rent(user){
+  rent(user) {
+    //the "===true" is not required because this.isBroken will evaluate to "true"!
+    //also, we may want to separate these into different if statements to ensure we know exactly what the error is
     if(this.charge<20 || this.isBroken===true){
       throw new Error('Scooter needs to charge or scooter needs a repair')
     } else {
